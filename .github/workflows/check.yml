@@ -1,0 +1,10 @@
+name: check
+on: [push, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -c "import app.cache as c; assert c.get('missing') == 'value', 'cache miss returned None'"

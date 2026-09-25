@@ -1,0 +1,8 @@
+[project]
+name = "sandbox"
+version = "0.0.1"
+dependencies = ["httpx>=0.20,<0.21"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^3.2"

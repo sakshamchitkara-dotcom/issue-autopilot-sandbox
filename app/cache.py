@@ -9,7 +9,6 @@ def get(key):
 
 
 def clear():
-    # TODO: expose cache hit/miss counters
     _CACHE.clear()
 
 
